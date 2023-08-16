@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <!-- <link rel="stylesheet" href="style/style.css"> -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Roboto", sans-serif;
+        }
+        
+        body {
+            background: rgb(74, 61, 61);
+        }
+        
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .calc_screen {
+            margin-top: 2rem;
+            /* background-color: aqua; */
+            color: #fff;
+            width: 52%;
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+        }
+        
+        .cal_operation {
+            font-size: 15px;
+        }
+        
+        .cal_typed {
+            font-size: 86px;
+            font-weight: bold;
+        }
+        /* .cal_body {
+    margin-top: 12rem;
+} */
+        
+        .cal_row {
+            display: flex;
+        }
+        
+        .button {
+            width: 40px;
+            display: inline-block;
+            margin: 1px 1px;
+            padding: 28px 98px;
+            border: 2px solid black;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 26px;
+            font-weight: bold;
+            background-color: black;
+            color: #fff;
+        }
+        
+        .button:hover {
+            background-color: rgb(56, 33, 33);
+        }
+        
+        #equal {
+            background-color: rgb(105, 105, 222);
+        }
+        
+        #equal:hover {
+            background-color: rgb(92, 92, 131);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="calc_screen">
+            <div class="cal_operation"></div>
+            <div class="cal_typed">0<span class="blink-me"></span></div>
+        </div>
+        <div class="cal_body">
+            <div class="cal_row">
+                <div class="button">%</div>
+                <div class="button">CE</div>
+                <div class="button">C</div>
+                <div class="button" id="cross"><span><-</span></div>
+            </div>
+            <div class="cal_row">
+                <div class="button">1/x</div>
+                <div class="button">x2</div>
+                <div class="button">/x</div>
+                <div class="button">/</div>
+            </div>
+            <div class="cal_row">
+                <div class="button">7</div>
+                <div class="button">8</div>
+                <div class="button">9</div>
+                <div class="button">*</div>
+            </div>
+            <div class="cal_row">
+                <div class="button">4</div>
+                <div class="button">5</div>
+                <div class="button">6</div>
+                <div class="button">-</div>
+            </div>
+            <div class="cal_row">
+                <div class="button">1</div>
+                <div class="button">2</div>
+                <div class="button">3</div>
+                <div class="button">+</div>
+            </div>
+            <div class="cal_row">
+                <div class="button">+/-</div>
+                <div class="button">0</div>
+                <div class="button">.</div>
+                <div id="equal" class="button">=</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

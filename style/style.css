@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: rgb(74, 61, 61);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.calc_screen {
+    margin-top: 2rem;
+    /* background-color: aqua; */
+    color: #fff;
+    width: 52%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.cal_operation {
+    font-size: 15px;
+}
+
+.cal_typed {
+    font-size: 86px;
+    font-weight: bold;
+}
+
+
+/* .cal_body {
+    margin-top: 12rem;
+} */
+
+.cal_row {
+    display: flex;
+}
+
+.button {
+    width: 40px;
+    display: inline-block;
+    margin: 1px 1px;
+    padding: 28px 98px;
+    border: 2px solid black;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    background-color: black;
+    color: #fff;
+}
+
+.button:hover {
+    background-color: rgb(56, 33, 33);
+}
+
+#equal {
+    background-color: rgb(105, 105, 222);
+}
+
+#equal:hover {
+    background-color: rgb(92, 92, 131);
+}
